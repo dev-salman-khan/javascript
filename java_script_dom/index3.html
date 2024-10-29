@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Dom Programe</title>
+  
+</head> 
+
+<body style="background-color: black; color: #fff; text-align: center;">
+    <!-- // DOM Stand For == Document Object Model  -->
+<ul class="languages">
+    <li>Javascript</li>
+</ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.languages').appendChild(li)
+
+    }
+    addLanguage("java")
+    addLanguage("TypeScript")
+    addLanguage("HTML")
+    function addLanguage_second_type(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.languages').appendChild(li);
+
+    }
+    addLanguage_second_type('vite && Taolwind Css')
+    // This Is For Example Whcih One Excution First When We Run First 
+    addLanguage_second_type('React Js',addLanguage("java"))
+</script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Dom Programe</title>
+  
+</head> 
+
+<body style="background-color: black; color: #fff; text-align: center;">
+    <!-- // DOM Stand For == Document Object Model  -->
+    <div class="parent">
+        <div class="child">Monday</div>
+        <div class="child">Tuesday</div>
+        <div class="child">wednesday</div>
+        <div class="child">Thursday</div>
+        <div class="child">Friday</div>
+        <div class="child">Saturday</div>
+        <div class="child">Sunday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children[3].innerHTML);
+    // for (let i = 0; i < parent.children.length; i++) {
+    //    console.log(parent.children[i] .innerHTML);
+    // } 
+    const child = document.querySelector('.child')
+    // console.log(child.parentElement.innerHTML);
+    // console.log(child.nextElementSibling.innerHTML);
+    console.log("NODES :",parent.childNodes)
+</script>
+</html>

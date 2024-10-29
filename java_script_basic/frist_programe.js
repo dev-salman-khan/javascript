@@ -1,0 +1,1 @@
+console.log(" hi I AM MD SALMAN KHAN A student OF First Year")
